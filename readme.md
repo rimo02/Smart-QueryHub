@@ -19,7 +19,7 @@ This application works like an AI Agent that reads through a dataset (CSV or Goo
     ```
 5. create a .env file and add your own api keys and request limit
    ```.env
-   SEARCH_API_KEY = b43ee798ea0ed1898b6abdabc810aa341a6daf0e68f9a403d292f8bb10ea50f5
-    GROQ_API_KEY = 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
+   SEARCH_API_KEY = 
+    GROQ_API_KEY = 
     MAX_REQUESTS = 10
    ```
