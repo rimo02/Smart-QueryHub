@@ -4,7 +4,7 @@ import re
 import streamlit as st
 import pandas as pd
 from utils import upload_csv, connect_google_sheet, run_web_search, extract_info_from_llm
-
+import re
 load_dotenv()
 st.title("AI Agent Dashboard")
 
@@ -50,11 +50,9 @@ if 'df' in locals():
                 continue
             extracted_info = extract_info_from_llm(
                 search_query, search_results)
-            if (len(extracted_info) == 0):
-                continue
             results.append({
                 "Entity": entity,
-                "Extracted Info":  extracted_info
+                "Extracted Info":  str(re.findall(r'\[(.*?)\]', extracted_info)) if extracted_info else "No Info found"
             })
             count += 1
 
