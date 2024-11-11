@@ -14,7 +14,7 @@ This application serves as an AI-powered agent that reads data from either a CSV
 
 1. Clone the Repository
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/rimo02/BreakoutAI.tech-Assignment.git
    ```
 
 2. Create a Virtual Environment
